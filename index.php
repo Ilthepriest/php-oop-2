@@ -36,8 +36,12 @@ $Products = [
                     <p>Marca: <?php echo $product->marca ?></p>
                     <p>Peso:  <?php echo $product->peso ?></p>
                     <p>Disponibilità:  <?php echo $product->disponibilità ?></p>
+                    <p><?php echo $product->colore ?></p>
+                    <p><?php echo $product->diametro ?></p>
+                    <p><?php echo $product->dimensione ?></p>
                     <b><?php echo $product->getSconto() ?></b>
                     <b><?php echo $product->getPagamento() ?></b>
+
                 </div>
             </div>
             <?php endforeach ?>
