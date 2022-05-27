@@ -28,7 +28,7 @@
     
         public function getPagamento(){
             $random_date = rand(2018,2025);
-            // $random_date = "non è un intero"; // in questo caso genererà l'errore e verrà l'avvertimento a schermo
+            //$random_date = "non è un intero"; // in questo caso genererà l'errore e verrà l'avvertimento a schermo
             if(!is_int($random_date)){
                 throw new Exception("Devi inserire una data");
             }else if($random_date >= date('Y')){

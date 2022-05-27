@@ -28,15 +28,14 @@ include __DIR__ . "/Layout/head.php";
                     <p><?php echo $product->dimensione ?></p>
                     <p><?php echo $product->materiale?></p>
                     <p><?php echo $product->lavabile ?></p>
-                    <p><?php
+                    <b><?php 
                         try{
-                            $product->getPagamento();
+                            echo $product->getPagamento();
                         }catch (Exception $e){
                             echo $e->getMessage();
                         }
-                     ?></p>
+                     ?></b>
                     <b><?php echo $product->getSconto() ?></b>
-                    <b><?php echo $product->getPagamento() ?></b>
 
                 </div>
             </div>
