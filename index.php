@@ -6,6 +6,9 @@ include __DIR__ . "/db.php";
 include __DIR__ . "/Layout/head.php";
 
 
+
+
+
 ?>
 
 
@@ -23,6 +26,8 @@ include __DIR__ . "/Layout/head.php";
                     <p><?php echo $product->colore ?></p>
                     <p><?php echo $product->diametro ?></p>
                     <p><?php echo $product->dimensione ?></p>
+                    <p><?php echo $product->materiale?></p>
+                    <p><?php echo $product->lavabile ?></p>
                     <b><?php echo $product->getSconto() ?></b>
                     <b><?php echo $product->getPagamento() ?></b>
 

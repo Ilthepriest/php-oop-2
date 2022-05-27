@@ -1,5 +1,8 @@
 <?php
+include __DIR__ . "/Trait_Tessuto.php";
+
     class Cuccia extends Prodotto{
+
         public $colore;
         public $dimensione;
     
@@ -8,5 +11,7 @@
             $this->colore = $colore;
             $this->dimensione = $dimensione;
         }
+
+        use Tessuto;
     }
 ?>

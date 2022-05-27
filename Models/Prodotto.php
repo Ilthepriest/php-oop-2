@@ -29,11 +29,14 @@
         public function getPagamento(){
             if(rand(2018, 2024) < date('Y')){
                 $this->pagamento = "Pagamento rifiutato";
-            }else{
+            }else if(rand(2018, 2024) >= date('Y')){
                 $this->pagamento = "Pagamento accettato";
             }
             return $this->pagamento;
         }
-    
+
+        
+
+       
     };
  ?>
