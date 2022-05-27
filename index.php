@@ -28,6 +28,13 @@ include __DIR__ . "/Layout/head.php";
                     <p><?php echo $product->dimensione ?></p>
                     <p><?php echo $product->materiale?></p>
                     <p><?php echo $product->lavabile ?></p>
+                    <p><?php
+                        try{
+                            $product->getPagamento();
+                        }catch (Exception $e){
+                            echo $e->getMessage();
+                        }
+                     ?></p>
                     <b><?php echo $product->getSconto() ?></b>
                     <b><?php echo $product->getPagamento() ?></b>
 
